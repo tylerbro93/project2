@@ -49,6 +49,18 @@ public class GuiBased extends JFrame{
 		
 	}
 	
+	public void turnButtonsOff(){
+		button1.setEnabled(false);
+		button2.setEnabled(false);
+		button3.setEnabled(false);
+		button4.setEnabled(false);
+		button5.setEnabled(false);
+		button6.setEnabled(false);
+		button7.setEnabled(false);
+		button9.setEnabled(false);
+		button8.setEnabled(false);
+	}
+	
 	
 	private class EventHasOccurred implements ActionListener{
 		boolean emptyState;
@@ -64,6 +76,11 @@ public class GuiBased extends JFrame{
 					winState = boardSystem.CheckForWin();
 					if(winState == true){
 						JOptionPane.showMessageDialog(null, "Player " + playerValue + " has won!!", "Victory", JOptionPane.PLAIN_MESSAGE);
+						turnButtonsOff();
+					}
+					else if(boardSystem.checkForTie() == true){
+						turnButtonsOff();
+						JOptionPane.showMessageDialog(null, "Unfortunately a tie has occurred", "Tie :(", JOptionPane.PLAIN_MESSAGE);
 					}
 					
 				}
@@ -76,7 +93,12 @@ public class GuiBased extends JFrame{
 					button2.setText(playerValue);
 					winState = boardSystem.CheckForWin();
 					if(winState == true){
+						turnButtonsOff();
 						JOptionPane.showMessageDialog(null, "Player " + playerValue + " has won!!", "Victory", JOptionPane.PLAIN_MESSAGE);
+					}
+					else if(boardSystem.checkForTie() == true){
+						turnButtonsOff();
+						JOptionPane.showMessageDialog(null, "Unfortunately a tie has occurred", "Tie :(", JOptionPane.PLAIN_MESSAGE);
 					}
 				}
 			}
@@ -88,7 +110,12 @@ public class GuiBased extends JFrame{
 					button3.setText(playerValue);
 					winState = boardSystem.CheckForWin();
 					if(winState == true){
+						turnButtonsOff();
 						JOptionPane.showMessageDialog(null, "Player " + playerValue + " has won!!", "Victory", JOptionPane.PLAIN_MESSAGE);
+					}
+					else if(boardSystem.checkForTie() == true){
+						turnButtonsOff();
+						JOptionPane.showMessageDialog(null, "Unfortunately a tie has occurred", "Tie :(", JOptionPane.PLAIN_MESSAGE);
 					}
 				}
 			}
@@ -100,7 +127,12 @@ public class GuiBased extends JFrame{
 					button4.setText(playerValue);
 					winState = boardSystem.CheckForWin();
 					if(winState == true){
+						turnButtonsOff();
 						JOptionPane.showMessageDialog(null, "Player " + playerValue + " has won!!", "Victory", JOptionPane.PLAIN_MESSAGE);
+					}
+					else if(boardSystem.checkForTie() == true){
+						turnButtonsOff();
+						JOptionPane.showMessageDialog(null, "Unfortunately a tie has occurred", "Tie :(", JOptionPane.PLAIN_MESSAGE);
 					}
 				}
 			}
@@ -112,7 +144,12 @@ public class GuiBased extends JFrame{
 					button5.setText(playerValue);
 					winState = boardSystem.CheckForWin();
 					if(winState == true){
+						turnButtonsOff();
 						JOptionPane.showMessageDialog(null, "Player " + playerValue + " has won!!", "Victory", JOptionPane.PLAIN_MESSAGE);
+					}
+					else if(boardSystem.checkForTie() == true){
+						turnButtonsOff();
+						JOptionPane.showMessageDialog(null, "Unfortunately a tie has occurred", "Tie :(", JOptionPane.PLAIN_MESSAGE);
 					}
 				}
 			}
@@ -124,7 +161,12 @@ public class GuiBased extends JFrame{
 					button6.setText(playerValue);
 					winState = boardSystem.CheckForWin();
 					if(winState == true){
+						turnButtonsOff();
 						JOptionPane.showMessageDialog(null, "Player " + playerValue + " has won!!", "Victory", JOptionPane.PLAIN_MESSAGE);
+					}
+					else if(boardSystem.checkForTie() == true){
+						turnButtonsOff();
+						JOptionPane.showMessageDialog(null, "Unfortunately a tie has occurred", "Tie :(", JOptionPane.PLAIN_MESSAGE);
 					}
 				}
 			}
@@ -136,7 +178,12 @@ public class GuiBased extends JFrame{
 					button7.setText(playerValue);
 					winState = boardSystem.CheckForWin();
 					if(winState == true){
+						turnButtonsOff();
 						JOptionPane.showMessageDialog(null, "Player " + playerValue + " has won!!", "Victory", JOptionPane.PLAIN_MESSAGE);
+					}
+					else if(boardSystem.checkForTie() == true){
+						turnButtonsOff();
+						JOptionPane.showMessageDialog(null, "Unfortunately a tie has occurred", "Tie :(", JOptionPane.PLAIN_MESSAGE);
 					}
 				}
 			}
@@ -148,7 +195,12 @@ public class GuiBased extends JFrame{
 					button8.setText(playerValue);
 					winState = boardSystem.CheckForWin();
 					if(winState == true){
+						turnButtonsOff();
 						JOptionPane.showMessageDialog(null, "Player " + playerValue + " has won!!", "Victory", JOptionPane.PLAIN_MESSAGE);
+					}
+					else if(boardSystem.checkForTie() == true){
+						turnButtonsOff();
+						JOptionPane.showMessageDialog(null, "Unfortunately a tie has occurred", "Tie :(", JOptionPane.PLAIN_MESSAGE);
 					}
 				}
 			}
@@ -160,7 +212,12 @@ public class GuiBased extends JFrame{
 					button9.setText(playerValue);
 					winState = boardSystem.CheckForWin();
 					if(winState == true){
+						turnButtonsOff();
 						JOptionPane.showMessageDialog(null, "Player " + playerValue + " has won!!", "Victory", JOptionPane.PLAIN_MESSAGE);
+					}
+					else if(boardSystem.checkForTie() == true){
+						turnButtonsOff();
+						JOptionPane.showMessageDialog(null, "Unfortunately a tie has occurred", "Tie :(", JOptionPane.PLAIN_MESSAGE);
 					}
 				}
 			}

@@ -49,9 +49,7 @@ public class Model {
 		victories = victories + checkForDiagnalWin();
 		if(victories!=0){
 			victoryProgress = true;
-			System.out.println(victoryProgress);
 		}
-		System.out.println(victoryProgress);
 		return victoryProgress;
 	}
 	public int checkForVerticalWin(){
@@ -60,14 +58,11 @@ public class Model {
 		for(int i = 0; i < 3; ++i){
 			playerMarksFound = 0;
 			for(int j = 0; j < 3; ++j){
-				System.out.print(boardLayout[i][j]);
 				if(player == boardLayout[i][j]){
 					playerMarksFound = playerMarksFound + 1;
-					System.out.println(playerMarksFound);
 					if(playerMarksFound == 3){
 						win = 1;
 						i = 4;
-						System.out.println("win");
 					}
 				}
 			}
@@ -82,7 +77,6 @@ public class Model {
 			for(int j = 0; j < 3; j++){
 				if(player == boardLayout[j][i]){
 					playerMarksFound = playerMarksFound + 1;
-					System.out.println(playerMarksFound);
 				}
 			}
 			if(playerMarksFound == 3){
